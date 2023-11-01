@@ -17,6 +17,8 @@
  * along with this program. If not, see http://gnu.org/licenses
  */
 
+#include <stdexcept>
+
 #include "CBot/CBotInstr/CBotExprLitString.h"
 
 #include "CBot/CBotStack.h"

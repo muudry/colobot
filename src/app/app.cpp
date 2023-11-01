@@ -1831,6 +1831,10 @@ char CApplication::GetLanguageChar() const
             langChar = 'B';
             break;
 
+        case LANGUAGE_HUNGARIAN:
+            langChar = 'H';
+            break;
+
     }
     return langChar;
 }
@@ -1891,6 +1895,10 @@ void CApplication::SetLanguage(Language language)
             {
                 m_language = LANGUAGE_PORTUGUESE_BRAZILIAN;
             }
+            else if (strncmp(envLang,"hu",2) == 0)
+            {
+                m_language = LANGUAGE_HUNGARIAN;
+            }
             else
             {
                 GetLogger()->Warn("Environment locale ('%s') is not supported, setting default language\n", envLang);
@@ -1932,6 +1940,10 @@ void CApplication::SetLanguage(Language language)
 
         case LANGUAGE_PORTUGUESE_BRAZILIAN:
             locale = "pt_BR.utf8";
+            break;
+        
+        case LANGUAGE_HUNGARIAN:
+            locale = "hu_HU.utf8";
             break;
     }
 

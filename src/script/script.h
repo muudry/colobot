@@ -26,6 +26,7 @@
 
 #include "CBot/CBot.h"
 
+#include <limits>
 #include <memory>
 #include <limits>
 #include <string>

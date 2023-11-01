@@ -150,6 +150,7 @@ void CScreenSetupGame::CreateInterface()
     pli->SetItemName(1+LANGUAGE_POLISH, "Polish");
     pli->SetItemName(1+LANGUAGE_RUSSIAN, "Russian");
     pli->SetItemName(1+LANGUAGE_PORTUGUESE_BRAZILIAN, "Brazilian Portuguese");
+    pli->SetItemName(1+LANGUAGE_HUNGARIAN, "Hungarian");
 
     UpdateSetupButtons();
 }
